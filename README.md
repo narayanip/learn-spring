@@ -29,7 +29,7 @@ Build Application
         
 Run Application Development Mode
 ---
-Make sure you have this dependency in pom.xml
+    Make sure you have this dependency in pom.xml
 `   <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-devtools</artifactId>
@@ -37,8 +37,8 @@ Make sure you have this dependency in pom.xml
       <optional>true</optional>
     </dependency>`
   
-Start the applicaiton in dev mode
-This will allow hot reload of class
+    Start the applicaiton in dev mode
+    This will allow hot reload of class
 `
 mvn clean spring-boot:run
 `    
