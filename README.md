@@ -30,18 +30,20 @@ Build Application
 Run Application Development Mode
 ---
     Make sure you have this dependency in pom.xml
-`   <dependency>
+```   <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-devtools</artifactId>
       <scope>runtime</scope>
       <optional>true</optional>
-    </dependency>`
+    </dependency>
+ ```
   
     Start the applicaiton in dev mode
     This will allow hot reload of class
-`
-mvn clean spring-boot:run
-`    
+
+```
+    mvn clean spring-boot:run
+```    
 Run Application
 --
     Make sure the database server you have chosen is running
