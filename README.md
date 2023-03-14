@@ -26,6 +26,22 @@ Build Application
 --
     From the project folder
         mvn clean install -DskipTests=true
+        
+Run Application Development Mode
+---
+Make sure you have this dependency in pom.xml
+`   <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-devtools</artifactId>
+      <scope>runtime</scope>
+      <optional>true</optional>
+    </dependency>`
+  
+Start the applicaiton in dev mode
+This will allow hot reload of class
+`
+mvn clean spring-boot:run
+`    
 Run Application
 --
     Make sure the database server you have chosen is running
@@ -33,5 +49,7 @@ Run Application
         #this will run the server in port 8080 
         #if needed to run on a different port no. change 8080 to something else
         java -jar target/learn-spring.jar --server.port=8080
+        
+  
 
 
